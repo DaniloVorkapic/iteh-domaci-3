@@ -1,10 +1,12 @@
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Pocetna from './Pocetna';
 function App() {
   return (
-    <div className="App">
-     
+    <div >
+ 
+        <Pocetna></Pocetna>
     </div>
   );
 }

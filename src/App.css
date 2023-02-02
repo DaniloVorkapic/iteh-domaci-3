@@ -1,0 +1,27 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.pocetna{
+  background-image: url("https://media.istockphoto.com/id/1223141903/photo/back-view-of-elementary-students-raising-their-hands-on-a-class.jpg?s=612x612&w=0&k=20&c=Pbl-fSs6GcAMX5LSPOeAMXTAYyRmtQXA5xJkyAkOvYA=");
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 500px;
+  padding-bottom: 500px;
+  
+}
+ 
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+ 
