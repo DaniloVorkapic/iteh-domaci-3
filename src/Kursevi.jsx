@@ -1,3 +1,4 @@
+import { useState } from "react";
 import RedTabele from "./RedTabele";
 
  
@@ -24,7 +25,15 @@ function Kursevi({niz}) {
             }       
         }
     }
-
+    const [sort, setSort] = useState(true);
+    function sortAsc(){
+      
+      setSort(true);
+    }
+    function sortDesc(){
+      
+      setSort(false);
+    }
 
 
     return (
@@ -43,10 +52,25 @@ function Kursevi({niz}) {
                     </tr>
                 </thead>
                 <tbody>
-                 {niz.map((k)=><RedTabele key={k.id} kurs={k}></RedTabele>)}
+                 {sort==true ?  
+                        niz
+                        .sort((a,b)=> a.cena<b.cena?-1:1)
+                        .map((k)=><RedTabele key={k.id} kurs={k}></RedTabele>)
+                 
+                 :
+                        niz
+                        .sort((a,b)=> a.cena>b.cena?-1:1)
+                        .map((k)=><RedTabele key={k.id} kurs={k}></RedTabele>)
+                        
+                    
+                    
+                    
+                }
               
                 </tbody>
                 </table>
+            <button type="button" className="btn btn-secondary" id="sortTable"  onClick={sortDesc}  > Sortiraj po ceni opadajuce</button>                    
+            <button type="button" className="btn btn-secondary" id="sortTable"  onClick={sortAsc}  >  Sortiraj po ceni rastuce</button>        
         </div>
     );
   }
