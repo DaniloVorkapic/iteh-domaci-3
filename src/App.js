@@ -6,6 +6,7 @@ import Pocetna from './Pocetna';
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import Navbar from './Navbar';
 import Kontakt from './Kontakt';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
   
 
           </Routes>
-       
+        <Footer></Footer>
      
       </BrowserRouter>
     </div>
