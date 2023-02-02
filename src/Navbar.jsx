@@ -12,6 +12,8 @@ function Navbar() {
 
             <Link to="/"   >Početna strana</Link>   
             <Link to="/kontakt"   >Kontakt strana</Link>   
+            <Link to="/kursevi"   >Kursevi</Link>   
+
        
       
  
